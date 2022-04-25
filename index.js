@@ -24,7 +24,7 @@ async function run() {
 
         const result = await userCollection.insertOne(user);
 
-        console.log(`user added with id: ${result.insertedId}`)
+        console.log(`user added with id: ${result.insertedId}`);
     }
     finally {
         await client.close();
